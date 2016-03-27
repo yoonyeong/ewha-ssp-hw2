@@ -20,9 +20,9 @@ void setup(){
 	pinMode(REAR_LED_PIN,OUTPUT);
 }
 void loop(){
-	myAnalogWrite(REAR_LED_PIN,100,2000);
-	myAnalogWrite(REAR_LED_PIN,75,2000);
-	myAnalogWrite(REAR_LED_PIN,50,2000);
-	myAnalogWrite(REAR_LED_PIN,25,2000);
-	myAnalogWrite(REAR_LED_PIN,0,2000);
+	int i;
+	for(i=100;i!=0;i--)
+	{
+		myAnalogWrite(REAR_LED_PIN,i,100);
+	}
 }
